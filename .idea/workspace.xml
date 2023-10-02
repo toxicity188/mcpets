@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27c587a7-8e58-4c6f-a866-87b240e692b0" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jitpack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/MCPets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/PPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/api/MCPetsAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/AArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/CCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentClearStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentDebug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentMount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentOpen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentPetFood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentReload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentRevoke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentSignalStick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/ArgumentSpawn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/mcpets/MCPetsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/commands/tabcompleters/MCPetsCommandTabCompleter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/compat/PlaceholderAPICompat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/PetDespawnReason.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/PetSkin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/PlayerSignal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/AbstractConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/BlacklistConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/CategoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/FormatArg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/ItemsListConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/LanguageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/PetConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/config/PetFoodConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorConversation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorEditing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorExpectationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorPageSelection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/editor/EditorState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/AbstractFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/DespawnPetFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/DismountFlyPetFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/DismountPetFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/FlagsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/PetDamageableByPlayerFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/flags/StoppableFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/inventories/CategoriesMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/inventories/PetInteractionMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/inventories/PetInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/inventories/PetMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/livingpets/PetFood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/livingpets/PetFoodType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/livingpets/PetLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/livingpets/PetStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/serializer/PetStatsSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/sql/Databases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/sql/MySQLDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/sql/PlayerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/data/sql/PlayerDataNoDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/EntityMountPetEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetCastSkillEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetChangeNameEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetDamageEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetDamagedByEntityEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetDamagedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetDeathEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetDespawnEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetFedByPlayerEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetGainExperienceEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetLevelUpEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetOwnerInteractEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetSpawnEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetSpawnedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetTamedByPlayerEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/events/PetTamingEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/CategoriesMenuListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/CategoryMenuListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/DatabaseRefreshListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/LivingPetsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetDamageFlagListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetInteractionMenuListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetInventoryListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetMenuListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/PetSkinsMenuListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/SignalStickListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/VanillaDismountListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/editor/EditorConversationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/listeners/editor/EditorGlobalListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/MythicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/conditions/PetExperienceCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/conditions/PetTamingCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/DropPetInventoryMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/DropPetItemMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/EvolvePetMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/GivePetMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/PetDamageMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/PetDespawnMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/PetExperienceMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/PetFollowMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/PetNameMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/SetLivingPetMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/mechanics/SetPetMechanic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/placeholders/PetPlaceholdersManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/targeters/TargeterPetFromOwner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/mythicmobs/targeters/TargeterPetOwner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/BukkitSerialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/PathFindingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/PermsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/PetAnnouncement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/PetMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/PetTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nocsy/mcpets/utils/debug/Debugger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2WCccCDwT0o1rIA5ax5zzDtPMzK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/angry/intellij/MCPets/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.35327965&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\angry\intellij\MCPets\src\main\java" />
+      <recent name="C:\Users\angry\intellij\MCPets\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\angry\intellij\MCPets\.idea" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MCPets [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MCPets [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="27c587a7-8e58-4c6f-a866-87b240e692b0" name="변경" comment="" />
+      <created>1696240079971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696240079971</updated>
+    </task>
+    <servers />
+  </component>
+</project>
