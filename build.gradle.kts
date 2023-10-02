@@ -53,3 +53,13 @@ tasks {
         }
     }
 }
+
+val targetJavaVersion = 17
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+    withJavadocJar()
+    withSourcesJar()
+}
