@@ -39,6 +39,9 @@ tasks {
     compileJava {
         options.encoding = Charsets.UTF_8.name()
     }
+    javadoc {
+        options.encoding = Charsets.UTF_8.name()
+    }
     test {
         useJUnitPlatform()
     }
