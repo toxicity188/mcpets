@@ -1,3 +1,8 @@
+# Mc Pets for ModelEngine 4
+This project is MC Pets for ModelEngine 4.  
+This project is only available with ModelEngine 4.  
+
+# Original README.md
 <img src="https://i.ibb.co/7RYYYZb/spigot-mcpets-banner.png" alt="MC Pets logo">
 
 Welcome to MC Pets!
