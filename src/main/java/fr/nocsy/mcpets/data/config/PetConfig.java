@@ -140,7 +140,6 @@ public class PetConfig extends AbstractConfig {
 
         // Setting up the data
         String id = getConfig().getString("Id");
-        String modelId = getConfig().getString("ModelId");
         String mobType = getConfig().getString("MythicMob");
         String permission = getConfig().getString("Permission");
         int distance = getConfig().getInt("Distance");
@@ -163,18 +162,17 @@ public class PetConfig extends AbstractConfig {
         if(getConfig().get("Signals.Item.GetFromMenu") != null)
             enableSignalStickFromMenu = getConfig().getBoolean("Signals.Item.GetFromMenu");
 
-        if (id == null || modelId == null) {
+        if (id == null) {
             // Warning case on which something essential would be missing
             MCPets.getLog().warning(MCPets.getLogName() + "This pet could not be registered. Please check the configuration file to make sure you didn't miss anything.");
             MCPets.getLog().warning(MCPets.getLogName() + "Information about the registered pet : ");
             MCPets.getLog().warning("id : " + id);
-            MCPets.getLog().warning("modelId : " + modelId);
             MCPets.getLog().warning("mobType : " + mobType);
             MCPets.getLog().warning("permission : " + permission);
             return;
         }
 
-        this.pet = new Pet(id, modelId);
+        this.pet = new Pet(id);
 
         petConfigMapping.put(id, this);
         pet.setMythicMobName(mobType);

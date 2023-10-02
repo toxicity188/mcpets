@@ -1,11 +1,8 @@
 package fr.nocsy.mcpets.data;
 
 import com.ticxo.modelengine.api.ModelEngineAPI;
-import com.ticxo.modelengine.api.model.ActiveModel;
 import com.ticxo.modelengine.api.model.ModeledEntity;
-import com.ticxo.modelengine.api.model.bone.BoneBehaviorTypes;
 import com.ticxo.modelengine.api.model.bone.manager.MountManager;
-import com.ticxo.modelengine.api.model.bone.render.renderer.NameTagRenderer;
 import fr.nocsy.mcpets.MCPets;
 import fr.nocsy.mcpets.PPermission;
 import fr.nocsy.mcpets.data.config.FormatArg;
@@ -73,8 +70,6 @@ public class Pet {
 
     @Getter
     private final String id;
-    @Getter
-    private final String modelId;
 
     @Getter
     @Setter
@@ -210,9 +205,8 @@ public class Pet {
      * Constructor only used to create a fundamental Pet. If you wish to use a pet instance, please refer to copy()
      *
      */
-    public Pet(String id, String modelId) {
+    public Pet(String id) {
         this.id = id;
-        this.modelId = modelId;
         this.instance = this;
         this.checkPermission = true;
         this.firstSpawn = true;
@@ -963,7 +957,7 @@ public class Pet {
             ModeledEntity model = ModelEngineAPI.getModeledEntity(activeMob.getEntity().getUniqueId());
             if (model != null)
             {
-                model.getModel(modelId).ifPresent(am -> am.getMountManager().ifPresent(MountManager::dismountAll));
+                model.getModels().values().iterator().next().getMountManager().ifPresent(MountManager::dismountAll);
             }
 
             // If it's not a death, we don't let the death animation happen
@@ -1122,7 +1116,7 @@ public class Pet {
      * @return
      */
     public Pet copy() {
-        Pet pet = new Pet(id, modelId);
+        Pet pet = new Pet(id);
         pet.setPetStats(petStats);
         pet.setPetLevels(petLevels);
         pet.setMythicMobName(mythicMobName);
@@ -1173,7 +1167,7 @@ public class Pet {
                     activeMob.getEntity().getBukkitEntity().addPassenger(ent);
                     return false;
                 }
-                model.getModel(modelId).ifPresent(am -> am.getMountManager().ifPresent(mm -> {
+                model.getModels().values().iterator().next().getMountManager().ifPresent(mm -> {
                     var controller = ModelEngineAPI.getMountControllerTypeRegistry().get(mountType);
                     if (controller == null) controller = ModelEngineAPI.getMountControllerTypeRegistry().getDefault();
                     if (ent.getVehicle() != null) ent.getVehicle().eject();
@@ -1183,7 +1177,7 @@ public class Pet {
                     } catch (IllegalStateException ex) {
                         Language.ALREADY_MOUNTING.sendMessageFormated(ent);
                     }
-                }));
+                });
             } catch (NoClassDefFoundError error) {
                 MCPets.getLog().warning(Language.REQUIRES_MODELENGINE.getMessage());
                 if (ent instanceof Player)
@@ -1206,7 +1200,10 @@ public class Pet {
             if (model == null) {
                 return false;
             }
-            return model.getModel(modelId).map(am -> am.getMountManager().map(mm -> mm.getDriver() != null && mm.getDriver().getUniqueId().equals(ent.getUniqueId())).orElse(null)).orElse(false);
+            return model.getModels().values().iterator().next().getMountManager().map(mm -> {
+                var driver = mm.getDriver();
+                return driver != null && driver.getUniqueId().equals(ent.getUniqueId());
+            }).orElse(false);
         }
         return false;
     }
@@ -1224,7 +1221,7 @@ public class Pet {
                 if (model == null) {
                     return false;
                 }
-                return model.getModel(modelId).map(am -> am.getMountManager().map(MountManager::hasRiders).orElse(false)).orElse(false);
+                return model.getModels().values().iterator().next().getMountManager().map(MountManager::hasRiders).orElse(false);
             }
 
         } catch (NoClassDefFoundError ignored) {}
@@ -1247,7 +1244,7 @@ public class Pet {
                 if (model == null) {
                     return;
                 }
-                model.getModel(modelId).ifPresent(am -> am.getMountManager().ifPresent(mm -> mm.dismountRider(ent)));
+                model.getModels().values().iterator().next().getMountManager().ifPresent(mm -> mm.dismountRider(ent));
             }
 
         } catch (NoClassDefFoundError ignored) {
